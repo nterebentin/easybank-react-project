@@ -1,0 +1,43 @@
+@import "./styles/bootstrap-grid.min.css";
+@import "./styles/colors.scss";
+@import "./styles/modal.scss";
+@import "./styles/table.scss";
+@import "./styles/texts.scss";
+@import "./styles/variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+body {
+  font-family: 'Public Sans', sans-serif;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  grid-template-rows: repeat(5, auto);
+  margin:0;
+  @media (min-width: 1024px) {
+      grid-template-rows: auto 387px 650px auto auto;
+  }
+
+  @media (min-width:1220px) {
+      grid-template-rows: auto 440px 650px auto auto;
+  }
+}
+
+#app {
+  .app-loading {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+  }
+}

@@ -1,0 +1,11 @@
+
+@import '../../styles/variables.scss';
+
+#home-page {
+  background: $color-neutral-white;
+
+  .page-content {
+    text-align: center;
+    margin: auto;
+  }
+}
